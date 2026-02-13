@@ -11,7 +11,7 @@ This new implementation is purely HTML5 using JS.
 You can also load in the initial video grid urls by URL parameter:
 Add "?tv1=" followed by the URL to load
 Each grid can be loaded this way:
-`https://kmfd.github.io/?tv1=<URL1>&tv2=<URL2>&tv3=<URL3>&tv4=<URL4>`
+`https://at-sign.github.io/4tvs?tv1=<URL1>&tv2=<URL2>&tv3=<URL3>&tv4=<URL4>`
 
 
 
@@ -98,10 +98,10 @@ http://www.streambox.fr/playlists/test_001/stream.m3u8
 #EXTINF:-1,Test E
 https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8
 ```
-(example youtube playlist featuring worldcams <a href="https://github.com/kmfd/kmfd.github.io/blob/main/worldcams%20youtube%20playlist.m3u">here</a> (from <a href="https://www.youtube.com/playlist?list=PL7CqcasaJQRPsJ1eTLaGQotEsDbQiaCNb">here</a>))
+(example youtube playlist featuring worldcams <a href="https://github.com/at-sign/4tvs/blob/main/worldcams%20youtube%20playlist.m3u">here</a> (from <a href="https://www.youtube.com/playlist?list=PL7CqcasaJQRPsJ1eTLaGQotEsDbQiaCNb">here</a>))
 
 
-(example HLS playlist with demo streams<a href="https://github.com/kmfd/9TVs/blob/master/4tvs/M3UEXAMPLE.m3u">here</a> (from <a href="https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/">here</a>))
+(example HLS playlist with demo streams<a href="https://github.com/at-sign/4tvs/blob/master/4tvs/M3UEXAMPLE.m3u">here</a> (from <a href="https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/">here</a>))
 
 
 # This project uses
@@ -144,3 +144,4 @@ Refactor ninetvs.js some and restore drop event feature
 * Had some Youtube support
 * Had support for more streams that were not m3u8-based (via VLC)
 * Had aspect ratio and cropping control
+
