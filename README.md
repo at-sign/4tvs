@@ -1,5 +1,5 @@
-# 9TVs
-9TVs
+# 4TVs
+4TVs
 
 
 # Description
@@ -144,5 +144,6 @@ Refactor ninetvs.js some and restore drop event feature
 * Had some Youtube support
 * Had support for more streams that were not m3u8-based (via VLC)
 * Had aspect ratio and cropping control
+
 
 
