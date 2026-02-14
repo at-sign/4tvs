@@ -98,10 +98,10 @@ http://www.streambox.fr/playlists/test_001/stream.m3u8
 #EXTINF:-1,Test E
 https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8
 ```
-(example youtube playlist featuring worldcams <a href="https://github.com/at-sign/4tvs/blob/main/worldcams%20youtube%20playlist.m3u">here</a> (from <a href="https://www.youtube.com/playlist?list=PL7CqcasaJQRPsJ1eTLaGQotEsDbQiaCNb">here</a>))
+(example youtube playlist featuring worldcams <a href="https://raw.githubusercontent.com/at-sign/4tvs/refs/heads/master/4tvs/YTEXAMPLE.m3u">here</a> (from <a href="https://www.youtube.com/playlist?list=PL7CqcasaJQRPsJ1eTLaGQotEsDbQiaCNb">here</a>))
 
 
-(example HLS playlist with demo streams<a href="https://github.com/at-sign/4tvs/blob/master/4tvs/M3UEXAMPLE.m3u">here</a> (from <a href="https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/">here</a>))
+(example HLS playlist with demo streams<a href="https://raw.githubusercontent.com/at-sign/4tvs/refs/heads/master/4tvs/M3UEXAMPLE.m3u">here</a> (from <a href="https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/">here</a>))
 
 
 # This project uses
