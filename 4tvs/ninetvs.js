@@ -698,7 +698,9 @@ dropSetup(4);
   function log1() {
     var newDiv = document.createElement('logbox');
     newDiv.id = 'logbox';
-    gridUrl = 'http://kmfd.github.io/index.html?tv1=' + window.current[0] + '&tv2=' + window.current[1] + '&tv3=' + window.current[2] + '&tv4=' + window.current[3]
+
+    var currentPage = window.location.href;
+    gridUrl = currentPage + '&tv2=' + window.current[1] + '&tv3=' + window.current[2] + '&tv4=' + window.current[3]
     newDiv.innerHTML = '<ul> <li>' + window.current[0] + '</br>' + window.current[1] + '</br>' + window.current[2] + '</br>' + window.current[3] + '</li> </ul>' + '<ul> <li>' + 'url to recall the current grid:</br><a href="' + gridUrl + '">' + gridUrl + '</a>'
 
     document.getElementById("area").appendChild(newDiv);
