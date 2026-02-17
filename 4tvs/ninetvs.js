@@ -44,7 +44,7 @@ if (getUrlVars()['tv4'] >= '' && getUrlVars()['tv4']) {
   window.toLoad++;
 }
 }
-		
+
 
 function nameVideo(arg) {
   var videoId = 'video' + arguments[0];
@@ -136,7 +136,7 @@ function addTwitch(tvNum, newUrl) {
   script.onload = function() {
     var urlParts = newUrl.split('/');
     var channelOrVideoId = urlParts[urlParts.length - 1];
-    
+
     console.log('Preparing domain for parent option...');
     var referrer = document.referrer;
     console.log('Referrer:', referrer);
@@ -165,7 +165,7 @@ function addTwitch(tvNum, newUrl) {
       options.height = '100%';
     } else {
       options.channel = channelOrVideoId;
-      options.height = 300; // or any other default height you want
+      options.height = '100%';
     }
 
     var player = new Twitch.Player(videoId, options);
@@ -192,7 +192,7 @@ function addYouTube(arg) {
   //iframe.onload = loaded(1);
   videoToRemove = document.getElementById(videoId);
   videoToRemove.parentNode.replaceChild(iframe, videoToRemove);
-  
+
   // console.log(`Default video 'Big Buck Bunny' loaded with src: https://www.youtube.com/embed/YE7VzlLtp-4`);
 }
 
@@ -272,12 +272,12 @@ function next(tvNum) {
 		loadhls(tvNum);
 	}
 	}
-    
+
     window.current.splice(tvIndex, 1, newUrl);
     document.getElementById('drop' + tvNum).innerHTML = '<li>' + ytFormat(newUrl) + '</li>';
   }
 
-  
+
   console.log("report of grid urls after nexting:");
   logVideoUrls();
   iterate();
@@ -401,7 +401,7 @@ function skipcurrent() {
   console.log(JSON.stringify(window.urlList))
   while (i <= window.urlList.length) {
     console.log('playlist index window.toLoad is: ' + window.toLoad);
-    console.log('new url to check for skipping: ' + window.urlList[window.toLoad]);	  
+    console.log('new url to check for skipping: ' + window.urlList[window.toLoad]);
     if (window.current.includes(window.urlList[window.toLoad]) || window.urlList[window.toLoad] === undefined) {
 	  console.log('window.urlList[window.toLoad] is either undefined or already in the current playing grid')
       iterate();
@@ -686,7 +686,7 @@ dropSetup(4);
       // Can perhaps instead use object URLs see https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications#Using_object_URLs
       reader.readAsText(f);
     }
-	
+
 	window.toLoad = 0; // reset the playlist index for url to load next, the urls from the file were added to the beginning of the list
   }
 
