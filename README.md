@@ -3,7 +3,7 @@
 
 
 # Description
-A 3x3 (currently 2x2) HTML5 Video grid to channel surf YouTube, HLS/TS streams or .mp4 videos organized by .m3u8 playlist.
+A currently 2x2 HTML5 Video grid to channel surf YouTube, HLS/TS streams or .mp4 videos organized by .m3u8 playlist.
 
 This used to be a project based on the VLC Web Plugin, but since <a href="https://en.wikipedia.org/wiki/NPAPI#Support/deprecation">browsers ended support</a> for NPAPI plugins in favor of PPAPI, this was no longer a modern solution.
 This new implementation is purely HTML5 using JS.
@@ -41,7 +41,7 @@ Alt+Number = Skip 30 seconds on that screen
 
 # GUI Controls
 
-Document Button = Open file upload prompt (feed it one or more .m38/.m3u8 files, or text files in m3u format)
+Document Button = Open file upload prompt (feed it one or more .m3u/.m3u8 files, or text files in m3u format)
 
 Shuffle = Shuffles the playlist.
 
@@ -144,6 +144,7 @@ Refactor ninetvs.js some and restore drop event feature
 * Had some Youtube support
 * Had support for more streams that were not m3u8-based (via VLC)
 * Had aspect ratio and cropping control
+
 
 
 
